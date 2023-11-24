@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #3498db;
+    animation: intro 5s infinite ease-in-out forwards;
+}
+
+@keyframes intro {
+    0% {
+        transform: translateX(-55vw);
+    }
+    25% {
+        transform: translateX(0vw);
+    }
+    50% {
+        transform: rotate(120deg) scale(2);
+        background-color: blueviolet; 
+    }
+    75% {
+        transform: translateX(0vw) scale(2) rotate(120deg);
+        background-color: blueviolet; 
+    }
+    100% {
+        transform: translateY(-70vw) scale(2) rotate(120deg);
+        background-color: blueviolet; 
+    }
+    
+}
