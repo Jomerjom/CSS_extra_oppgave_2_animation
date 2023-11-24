@@ -25,7 +25,7 @@ section {
     width: 150px;
     height: 150px;
     background-color: #3498db;
-    animation: intro 5s infinite ease-in-out forwards;
+    animation: intro 3s infinite ease-in-out forwards;
 }
 
 @keyframes intro {
@@ -39,10 +39,10 @@ section {
         transform: rotate(120deg) scale(2);
         background-color: blueviolet; 
     }
-    75% {
+    /* 75% {
         transform: translateX(0vw) scale(2) rotate(120deg);
         background-color: blueviolet; 
-    }
+    } */
     100% {
         transform: translateY(-70vw) scale(2) rotate(120deg);
         background-color: blueviolet; 
